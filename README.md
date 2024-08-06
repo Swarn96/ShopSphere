@@ -1,67 +1,61 @@
-# E-Commerce-Application
+# ShopSphere
 
-- The E-Commerce Application is built using Java and Spring Boot, with security, scalability, and ease of maintenance. The backend uses Spring Data JPA to interact with a MySQL database, making it easy to manage and store important entities such as users, products, categories, orders, and more. User authentication is handled by Auth0, providing secure and reliable means of REST APIs.
+ShopSphere is a robust e-commerce application built using Java and Spring Boot, designed with a focus on security, scalability, and ease of maintenance. This application leverages Spring Data JPA for seamless interaction with a MySQL database, managing entities such as users, products, categories, orders, and more.
 
-- The APIs are well-documented and easily accessible through Swagger UI, making it simple for developers to test and understand the various endpoints. Overall, this project provides secure Rest APIs to create a scalable platform for businesses to sell their products to customers.
+## Features
 
-# Features
-## Admin:-
-- Login
-- Users
-- Address
-- Categories
-- Products
-- Price & discount
-- Orders
-## User:-
-- Registration & Login
-- Fetch categories and products based on category
-- Adding & deleting products to cart
-- Managing address and products quantity
-- Ordering products and fetching order status
+**Admin:**
+- **Login:** Secure access for admin users.
+- **Users Management:** Manage user information and roles.
+- **Address Management:** Handle addresses associated with users.
+- **Categories:** Create and manage product categories.
+- **Products:** Add, update, and delete products.
+- **Price & Discount Management:** Configure product pricing and discounts.
+- **Orders Management:** View and manage customer orders.
 
-# Security
-- The API is secured using JSON Web Tokens (JWT) handled by Auth0. To access the API, you will need to obtain a JWT by authenticating with the /login endpoint. The JWT should then be passed in the Authorize option available in the Swagger-ui.
+**User:**
+- **Registration & Login:** User authentication and registration.
+- **Fetch Categories and Products:** Browse products by category.
+- **Cart Management:** Add and delete products in the cart.
+- **Address and Quantity Management:** Manage shipping addresses and product quantities.
+- **Order Products:** Place orders and track order status.
 
-  ### Example:
-  - Authorization: <your_jwt>
+## Security
 
-# Technologies:
-- Java 17 or above
-- Spring Boot 3.0
-- Maven
-- MySQL
-- Spring Data JPA
-- Spring Security
-- JSON Web Tokens (JWT)
-- Auth0
-- Swagger UI
+ShopSphere utilizes JSON Web Tokens (JWT) for securing API endpoints, managed by Auth0. To access the API, users must authenticate via the `/login` endpoint to obtain a JWT, which should be passed in the Authorize option available in Swagger UI.
 
-# Running the app
-1. Clone the repository: git clone https://github.com/Sirajuddin135/E-Commerce-Application.git
-2. Import the project into STS:
-  - Click File > Import...
-  - Select Maven > Existing Maven Projects and click Next
-  - Browse to the project directory and click Finish
-3. Update the values in application.properties with your MySQL database connection details.
-4. Run the app: Right-click the project in the Package Explorer and click Run As > Spring Boot App.
+## API Documentation
 
-# API documentation
-- API documentation is available via Swagger UI at http://localhost:8080/swagger-ui/index.html
+The APIs are well-documented and easily accessible through Swagger UI, providing developers with an intuitive interface for testing and understanding the various endpoints.
 
-# ER-Diagram
-<img width="605" alt="ER-Diagram" src="https://user-images.githubusercontent.com/101395494/216134703-e7cefef6-187f-44df-9fd4-52aedc66d24b.png">
+## Technology Stack
 
-# Swagger-ui
-<img width="947" alt="Swagger-UI" src="https://user-images.githubusercontent.com/101395494/216388614-f8eed33e-cbbb-4cfa-997e-b76674bbb465.png">
+- **Languages:** Java 8, Core Java
+- **Frameworks:** Spring Boot, Spring Data JPA, Hibernate, JPA
+- **Database:** MySQL
+- **Security:** Auth0 for authentication, JWT for API security
+- **Tools:** Swagger UI for API documentation
 
-# API Controllers
-<img width="947" alt="Auth_Controller" src="https://user-images.githubusercontent.com/101395494/216388749-4f15d968-ae52-48a9-9c08-0b72d608084a.png">
-<img width="947" alt="User_Controller" src="https://user-images.githubusercontent.com/101395494/216755281-ebacb2a4-3f02-4d41-a695-d508ee537db1.png">
-<img width="947" alt="Address_Controller" src="https://user-images.githubusercontent.com/101395494/216388840-0a31a552-63e3-4b10-9fab-c6c705cd7af4.png">
-<img width="947" alt="Cart_Controller" src="https://user-images.githubusercontent.com/101395494/216388895-736fa8c1-7784-4d4d-8768-c619e6fd0e6f.png">
-<img width="947" alt="Category_Controller" src="https://user-images.githubusercontent.com/101395494/216388926-88c45391-d35b-4359-b239-86acb63ccb6b.png">
-<img width="947" alt="Product_Controller" src="https://user-images.githubusercontent.com/101395494/216755314-56904892-4a1d-4bc3-b40d-b9d76525ec83.png">
-<img width="947" alt="Order_Controller" src="https://user-images.githubusercontent.com/101395494/216388971-7d654a8e-6abc-4548-80c6-8d1173f56bc4.png">
+## Getting Started
 
-# Thank You
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/shopsphere.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd shopsphere
+    ```
+3. Configure the MySQL database settings in `application.properties`.
+4. Run the application:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
